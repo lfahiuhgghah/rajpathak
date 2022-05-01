@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{
+
+    margin: 0px;
+    padding:0px;
+    background-image: url("img/bg2.jpg");
+    width: 1445px;
+    height: 1445px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.left{
+    display: inline-block;
+    position: absolute;
+    top:4px;
+    left: 34px;
+    margin: 12px;
+}
+.mid{
+    
+    display:block;
+    width: 53%;
+    margin: 12px auto;
+    position: absolute;
+    top:12px;
+    right: 50px;
+}
+.right{
+      
+      position: absolute;
+      right: 34px;
+      top:0 px;
+      margin-top:550px ;
+      margin-right: 12px;
+
+}
+.navbar{
+    color: white;
+    border-radius: 25px;
+    border: 2px solid whitesmoke;
+    border-spacing: 5px;
+    padding: 5px;
+    
+
+}
+.navbar li{
+     color:white;
+     display:inline-block   ;
+     font-size: 20px;   
+     
+}
+.navbar li a{
+    color:white;
+    text-decoration: none;
+    padding: 25px 18px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: grey;
+}
+.left img{
+    width: 136px;
+    filter: invert(100%);
+}
+.para{
+    text-align: center;
+    margin-top: 2px;
+    font-weight: 600;
+}
+.suf{
+    color: red;
+    
+}
+
+.btn{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 14px;
+    margin: 8px;
+    padding: 4px;
+    
+}
+.main{
+    border: 2px solid black;
+    width: 320px;
+   margin-top: 0px;
+   position: relative;
+   top: 250px;
+   left: 180px;
+   border-radius: 26px;
+}
+.form-group{
+    text-align: center;
+    display: block;
+    width: 34px;
+    padding: 6px;
+    width: 100%;
+
+    
+    
+}
+input[type=text]{
+    border-radius: 6px;
+    width: 90%;
+    background-color: rgb(251, 252, 253);
+    font-size: medium;
+    text-align: center;
+    color: aliceblue;
+    padding: 4px;
+    border-color: rgb(47, 47, 48);
+}
+h2{
+    text-align: center;
+}
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="img\logo.jpg" alt="" >
+           <p class="para">Fitness<span class="suf">24/7</span></p>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                
+                <li class="active"><a href="">Home</a></li>
+                <li ><a href="">Fitness center</a></li>
+                <li ><a href="">About us</a></li>
+                <li ><a href="">Contact Us</a></li>
+                
+            </ul>        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    
+        <div class="main">
+            <h2>Join the best gym of Deoria</h2>
+            <form action="noaction.php" method="post">
+                <div class="form-group">
+                    <input type="text" placeholder="Type your name here">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Type your email here">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Type your phone no. here">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Type your address here"><br>
+                    <button class="btn">Submit</button>
+                </div>
+               
+            </form>
+
+        </div>
+
+</body>
+</html>
